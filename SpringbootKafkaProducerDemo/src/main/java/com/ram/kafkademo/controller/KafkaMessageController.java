@@ -19,7 +19,7 @@ public class KafkaMessageController
     public String publishMessage(@RequestBody Animal animal)
     {
     	kafkaProducerService.sendMessage(animal);
-		System.out.println("Successfully Published the Animal = '" + animal + "' to the AnimalTopic");
-		return "Successfully Published the Animal = '" + animal + "' to the AnimalTopic";
+		System.out.println("Successfully Published the Animal = '" + animal.toString() + "' to the AnimalTopic");
+		return "Successfully Published the Animal = '" + animal.getDetail() + "' to the AnimalTopic";
     }
 }

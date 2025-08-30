@@ -6,9 +6,14 @@ POST URL: http://localhost:9090/publish
 Body - json.
 ```json
 {
-    "name":"Cat",
-    "color":"White",
-    "animalType":"Domestic Animal"    
+  "wild":{
+    "value": true
+  },
+  "detail": {
+    "name": "Tiger",
+    "color": "Orange",
+    "animalType": "Wild1"
+  }
 }
 ```
 

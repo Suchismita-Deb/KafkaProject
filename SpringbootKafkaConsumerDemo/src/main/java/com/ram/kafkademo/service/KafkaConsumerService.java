@@ -11,6 +11,6 @@ public class KafkaConsumerService
 	@KafkaListener(topics = "AnimalTopic", groupId = "Group100",containerFactory = "animalListener")	
 	public void listen(Animal animal)
 	{
-		System.out.println("Received '" + animal +"' from the AnimalTopic." );
+		System.out.println("Received '" + animal.toString() +"' from the AnimalTopic." );
 	}
 }
